@@ -1,4 +1,2 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    
-</html>
+@extends('layouts.app')
+@section('title','Main')

@@ -1,4 +1,2 @@
-<!doctype html>
-<html lang="<?php echo e(app()->getLocale()); ?>">
-    
-</html>
+<?php $__env->startSection('title','Main'); ?>
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
