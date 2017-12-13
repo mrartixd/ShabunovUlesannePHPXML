@@ -18,7 +18,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Новости</a>
+        <a class="nav-link" href="{{ url('/home') }}">Новости</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +63,7 @@
 <p class="lead"> 
 <div class="container" style="padding-top:20px; padding-bottom:20px;">
 <div class="row">
-    <div class="col-4">
+<div class="col-12 col-md-12">
 	<div class="card" style="width: 20rem;">
   <div class="card-header">
     Задание
@@ -72,12 +72,13 @@
     <li class="list-group-item">Создать БД NewsBD</li>
     <li class="list-group-item"> Таблицы Users, News, Category </li>
     <li class="list-group-item">Зарегистрированные пользователи добавляют новости</li>
-	<li class="list-group-item">RSS XML экспорт</li>
-	<li class="list-group-item">Отображение новостей</li>
+	  <li class="list-group-item">RSS XML экспорт</li>
+	  <li class="list-group-item">Отображение новостей</li>
   </ul>
 </div>
-    </div>
-@yield('maincontent')
+</div>
+    @yield('maincontent')
+</div>
 </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
