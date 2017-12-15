@@ -34,6 +34,6 @@ class HomeController extends Controller
     public function categories()
     {
         $categories=\App\Category::all();
-        return view('layouts.categories', compact('categories'));
+        return view('pages.categories', compact('categories'));
     }
 }
