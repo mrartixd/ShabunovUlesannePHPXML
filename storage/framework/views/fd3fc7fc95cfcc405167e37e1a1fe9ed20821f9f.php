@@ -10,7 +10,7 @@
     <link href="<?php echo e(URL::to('css/bootstrap.min.css')); ?>" rel="stylesheet">
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:20px;">
   <a class="navbar-brand" href="<?php echo e(url('/home')); ?>">UlesannePHPXML</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -60,10 +60,9 @@
     </ul>
   </div>
 </nav>
-<p class="lead"> 
-<div class="container" style="padding-top:20px; padding-bottom:20px;">
+<div class="container">
 <div class="row">
-<div class="col-12 col-md-12">
+<div class="col-6 col-md-4" style="margin-bottom:20px;">
 	<div class="card" style="width: 20rem;">
   <div class="card-header">
     Задание
@@ -77,7 +76,9 @@
   </ul>
 </div>
 </div>
+<div class="col-12 col-md-8" style="margin-bottom:50px;">
     <?php echo $__env->yieldContent('maincontent'); ?>
+</div>
 </div>
 </div>
     <!-- Optional JavaScript -->
@@ -86,5 +87,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
-<footer> <div class="fixed-bottom p-3  bg-white text-black"><hr><center>Artur Shabunov 2017</center></div></footer>
-</html>
+  <footer style="padding-top: 80px;"><div class="fixed-bottom p-3 bg-secondary text-white">Artur Shabunov 2017</div></footer>
+  </html>

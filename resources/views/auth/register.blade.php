@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('title','Регистрация')
 @section('maincontent')
-<div class="col-8 col-md-12" style="padding-top: 30px">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
@@ -68,5 +67,4 @@
                 </div>
             </div>
         </div>
-</div>
 @endsection
