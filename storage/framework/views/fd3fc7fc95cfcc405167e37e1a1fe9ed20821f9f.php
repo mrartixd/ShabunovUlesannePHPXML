@@ -25,9 +25,9 @@
           Категории
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Заменить</a>
-          <a class="dropdown-item" href="#">Заменить</a>
-          <a class="dropdown-item" href="#">Заменить</a>
+        <?php $__currentLoopData = $welcome; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <a class="dropdown-item" href="#"> <?php echo e($category->namecategory); ?> </a>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
       </li>
       <!-- Authentication Links -->

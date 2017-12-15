@@ -28,6 +28,12 @@ class HomeController extends Controller
 
     public function newindex()
     {
+        $new =\DB::select('select * from category');
         return view('pages.new', compact('new'));
+    }
+    public function categories()
+    {
+        $categories=\App\Category::all();
+        return view('layouts.categories', compact('categories'));
     }
 }

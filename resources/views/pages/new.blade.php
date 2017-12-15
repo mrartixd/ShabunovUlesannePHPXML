@@ -10,7 +10,9 @@
 <label for="inputState">Категория</label>
 <select id="inputState" class="form-control">
   <option selected>Выберите категорию</option>
-  <option>...</option>
+  @foreach ($new as $category)
+  <option> {{$category->namecategory}} </option>
+  @endforeach
 </select>
 </div>
 <div class="form-group">
