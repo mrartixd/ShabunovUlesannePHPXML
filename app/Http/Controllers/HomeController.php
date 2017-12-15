@@ -26,16 +26,8 @@ class HomeController extends Controller
         return view('welcome');
     }
 
-    public function about()
+    public function newindex()
     {
-        return view('about');
+        return view('pages.new', compact('new'));
     }
-
-    public function partofspeech()
-    {
-        //SQL
-        $partofspeech=\DB::select('select * from partofspeech');
-        return view('welcome');
-    }
-    
 }

@@ -1,14 +1,6 @@
 @extends('layouts.app')
-@section('title','Словарь')
-@section('sidebar')
-<li class="nav-item">
-<a class="nav-link" href="{{URL::to('about')}}">About Us<span class="sr-only">(current)</span></a>
-</li>
-@endsection
-@section('namesite','Reset Password')
+@section('title','сброс пароля')
 @section('maincontent')
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-body">
                     @if (session('status'))
@@ -73,6 +65,4 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 @endsection
