@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
+use Illuminate\Routing\Redirector;
 
 class HomeController extends Controller
 {
@@ -26,9 +28,23 @@ class HomeController extends Controller
         return view('welcome');
     }
 
-    public function newindex()
+    public function create()
     {
-        \App\News::insert('insert into news (title,description,id_category) values (?, ?, ?)', array(title,description,category));
-        return view('pages.new', compact('new'));
+        return view('pages.new');
     }
+
+    public function suc()
+    {
+        return view('pages.success');
+    }
+
+    public function store(Post $postModel, Request $request)
+    {
+        //dd($request->all());
+        //\DB::table('news')->insert($request->except('_token'));
+        //$postModel->create($request->all());
+        \DB::insert('insert into news (title, description, id_category, link) values (?, ?, ?, ?)', [$request->get('title'), $request->get('description'), $request->get('category'),$request->get('links')]);
+        return redirect('suc');
+    }
+    
 }

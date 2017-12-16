@@ -47,7 +47,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" role="menu">
 
-          <a class="dropdown-item"  href="{{URL::to('new')}}">Добавить новость </a>
+          <a class="dropdown-item"  href="{{URL::to('new/create')}}">Добавить новость </a>
+          
   
           <a class="dropdown-item" href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Выход </a>
             <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>

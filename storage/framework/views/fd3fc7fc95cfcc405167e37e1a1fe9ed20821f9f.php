@@ -47,7 +47,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" role="menu">
 
-          <a class="dropdown-item"  href="<?php echo e(URL::to('new')); ?>">Добавить новость </a>
+          <a class="dropdown-item"  href="<?php echo e(URL::to('new/create')); ?>">Добавить новость </a>
+          
   
           <a class="dropdown-item" href="<?php echo e(url('/logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Выход </a>
             <form id="logout-form" action="<?php echo e(url('/logout')); ?>" method="POST" style="display: none;"><?php echo e(csrf_field()); ?></form>
