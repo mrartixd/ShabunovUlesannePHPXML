@@ -42,9 +42,9 @@ class HomeController extends Controller
     {
         //dd($request->all());
         //\DB::table('news')->insert($request->except('_token'));
-        //$postModel->create($request->all());
-        \DB::insert('insert into news (title, description, id_category, link) values (?, ?, ?, ?)', [$request->get('title'), $request->get('description'), $request->get('category'),$request->get('links')]);
-        return redirect('suc');
+        //$postModel->create($request->all(),$request->get(user()->name));
+        \DB::insert('insert into news (title, slug, author, description, content, idcategory) values (?, ?, ?, ?, ?, ?)', [$request->get('title'), $request->get('links'), $request->get('author'), $request->get('description'), $request->get('content'), $request->get('category')]);
+        return redirect('suc'); 
     }
     
 }

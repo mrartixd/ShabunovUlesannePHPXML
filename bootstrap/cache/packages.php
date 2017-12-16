@@ -25,4 +25,15 @@
       'Html' => 'Collective\\Html\\HtmlFacade',
     ),
   ),
+  'roumen/feed' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Roumen\\Feed\\FeedServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Feed' => 'Roumen\\Feed\\Feed',
+    ),
+  ),
 );

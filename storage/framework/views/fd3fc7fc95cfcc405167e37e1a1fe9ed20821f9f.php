@@ -20,16 +20,10 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo e(url('/home')); ?>">Новости</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Категории
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <?php  $categories =\DB::select('select * from category'); ?>
-        <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <a class="dropdown-item" href="#"> <?php echo e($category->namecategory); ?> </a>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo e(url('/rss')); ?>">RSS</a>
       </li>
       <!-- Authentication Links -->
       <?php if(Auth::guest()): ?>

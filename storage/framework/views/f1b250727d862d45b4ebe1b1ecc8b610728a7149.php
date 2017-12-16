@@ -2,12 +2,12 @@
 <?php $__env->startSection('maincontent'); ?>
 <?php $news =\DB::select('select * from news'); ?>
   <?php $__currentLoopData = $news; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $new): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-  <div class="card" style="width: 20rem;">
+  <div class="card" style="width: 20rem; margin-bottom: 20px;">
   <div class="card-body">
-    <h4 class="card-title"><?php echo e($new->title); ?></h4>
-    <h6 class="card-subtitle mb-2 text-muted"><?php echo e($new->pubdate); ?> &nbsp; <?php echo e($new->id_category); ?></h6>
-    <p class="card-text"><?php echo e($new->description); ?></p>
-    <a href="<?php echo e($new->link); ?>" class="card-link"><?php echo e($new->link); ?></a>
+    <h4 class="card-title"><?php echo e($new->title); ?> <br> <?php echo e($new->created_at); ?> &nbsp; <?php echo e($new->idcategory); ?></h4>
+    <h6 class="card-subtitle mb-2 text-muted"> <?php echo e($new->description); ?></h6>
+    <p class="card-text"><?php echo e($new->content); ?></p>
+    <a href="<?php echo e($new->slug); ?>" class="card-link"><?php echo e($new->slug); ?></a>
   </div>
 </div>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

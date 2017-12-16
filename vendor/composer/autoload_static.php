@@ -273,6 +273,13 @@ class ComposerStaticInit34600265940cd01919d92ff5897c910b
     );
 
     public static $prefixesPsr0 = array (
+        'R' => 
+        array (
+            'Roumen\\Feed' => 
+            array (
+                0 => __DIR__ . '/..' . '/roumen/feed/src',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -2874,6 +2881,8 @@ class ComposerStaticInit34600265940cd01919d92ff5897c910b
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'Roumen\\Feed\\Feed' => __DIR__ . '/..' . '/roumen/feed/src/Roumen/Feed/Feed.php',
+        'Roumen\\Feed\\FeedServiceProvider' => __DIR__ . '/..' . '/roumen/feed/src/Roumen/Feed/FeedServiceProvider.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
