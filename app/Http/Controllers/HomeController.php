@@ -28,12 +28,7 @@ class HomeController extends Controller
 
     public function newindex()
     {
-        $new =\DB::select('select * from category');
+        \App\News::insert('insert into news (title,description,id_category) values (?, ?, ?)', array(title,description,category));
         return view('pages.new', compact('new'));
-    }
-    public function categories()
-    {
-        $categories=\App\Category::all();
-        return view('pages.categories', compact('categories'));
     }
 }

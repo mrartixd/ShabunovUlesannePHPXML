@@ -9,9 +9,10 @@
 <div class="form-group">
 <label for="category">Категория</label>
 <select id="category" name="category" class="form-control">
+<?php $new =\DB::select('select * from category'); ?>
   <option selected>Выберите категорию</option>
   @foreach ($new as $category)
-  <option> {{$category->namecategory}} </option>
+  <option> {{$category->id}} </option>
   @endforeach
 </select>
 </div>

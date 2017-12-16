@@ -3,20 +3,21 @@
 <form role ="form" method="POST" action="<?php echo e(url('/register')); ?>">
   <div class="form-group">
     <label for="inputTitle">Заголовок</label>
-    <input type="text" class="form-control" id="inputTitle" placeholder="Заголовок статьи">
+    <input type="text" class="form-control" id="title" name="title" placeholder="Заголовок статьи">
   </div>
 <div class="form-group">
-<label for="inputState">Категория</label>
-<select id="inputState" class="form-control">
+<label for="category">Категория</label>
+<select id="category" name="category" class="form-control">
+<?php $new =\DB::select('select * from category'); ?>
   <option selected>Выберите категорию</option>
   <?php $__currentLoopData = $new; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-  <option> <?php echo e($category->namecategory); ?> </option>
+  <option> <?php echo e($category->id); ?> </option>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </select>
 </div>
 <div class="form-group">
-  <label for="inputtext">Текст статьи</label>
-  <textarea type="text" class="form-control" id="inputtext" placeholder="Здесь мог быть ваш текст для статьи..."></textarea>
+  <label for="description">Текст статьи</label>
+  <textarea type="text" class="form-control" id="description" name="description" placeholder="Здесь мог быть ваш текст для статьи..."></textarea>
 </div>
 <button type="submit" class="btn btn-primary">Добавить новость</button>
 </form>
