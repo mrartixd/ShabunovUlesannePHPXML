@@ -1,4 +1,4 @@
-1513448492s:949:"<?xml version="1.0" encoding="UTF-8" ?>
+1513756013s:1792:"<?xml version="1.0" encoding="UTF-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title type="text">Your title</title>
 	<subtitle type="html"><![CDATA[Your description]]></subtitle>
@@ -7,7 +7,29 @@
 	<link rel="alternate" type="text/html" href="http://localhost:8000/rss" ></link>
 	<link rel="self" type="application/atom+xml" href="http://localhost:8000/feed" ></link>
 	<logo>http://yoursite.tld/logo.jpg</logo>
-		<updated>2017-12-16T19:18:04+00:00</updated>
+		<updated>2017-12-20T08:46:43+00:00</updated>
+		<entry>
+			<author>
+				<name>Artur</name>
+			</author>
+			<title type="text"><![CDATA[Test]]></title>
+			<link rel="alternate" type="text/html" href="http://localhost:8000/www.wwd.ee"></link>
+			<id>http://localhost:8000/www.wwd.ee</id>
+			<summary type="html"><![CDATA[sadas]]></summary>
+			<content type="html"><![CDATA[sadasdas]]></content>
+			<updated>2017-12-20T08:46:43+00:00</updated>
+		</entry>
+		<entry>
+			<author>
+				<name>test</name>
+			</author>
+			<title type="text"><![CDATA[asasd]]></title>
+			<link rel="alternate" type="text/html" href="http://localhost:8000/asdas"></link>
+			<id>http://localhost:8000/asdas</id>
+			<summary type="html"><![CDATA[asdas]]></summary>
+			<content type="html"><![CDATA[asdas]]></content>
+			<updated>2017-12-16T19:24:14+00:00</updated>
+		</entry>
 		<entry>
 			<author>
 				<name>artur</name>

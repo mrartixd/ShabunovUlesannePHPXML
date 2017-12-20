@@ -36,9 +36,9 @@ Route::get('rss', function () {
     if (!$feed->isCached())
     {
     /* set your feed's title, description, link, pubdate and language */
-    $feed->title = 'Your title';
-    $feed->description = 'Your description';
-    $feed->logo = 'http://yoursite.tld/logo.jpg';
+    $feed->title = 'Shabunov XML';
+    $feed->description = 'Это XML файл';
+    $feed->logo = 'img/xml_logo.png';
     $feed->link = url('feed');
     $feed->setDateFormat('datetime'); // 'datetime', 'timestamp' or 'carbon'
     $feed->pubdate = $posts[0]->created_at;
